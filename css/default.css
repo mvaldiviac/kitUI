@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    background-image: url(../images/bg7.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    
+}
+
+#container{
+    width: 90%;
+    margin: 0px auto;
+    display: block;
+    padding-top: 40px;
+    
+    /* border: 1px solid greenyellow; */
+}
+h1, h2, h3, h4, h5, h6{
+    margin: auto;
+}
+#container h1{
+    text-align: center;
+}
+#container p{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+.selectores{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-bottom: 30px;
+}
+.selectores select{
+    width: 200px;
+    height: 40px;
+    border:1px solid #CCC;
+    border-radius: 10px;
+    padding-left: 12px;
+    color: #454545;
+}
+section.titulosH{
+    width: auto;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.titulosH h1{
+    text-align: left !important;
+}
+section.inputs{
+    width: auto;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    padding: 20px;
+    display: block;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    opacity: 0.95;
+    /* border: 1px solid red; */
+}
+.agrupaInputs{
+    /* float: left; */
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin: 20px auto;
+    /* border: 1px solid blue; */
+}
+div.agrupaInputs label{
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    /* background-color: #f4f4f4; */
+    
+}
+label.tit{
+    margin-bottom: 8px;
+}
+/*/////// Aplica estilos básicos al input y la animación del input ///////////////*/
+input[type=text].inputText1{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border:1px solid #CCC;
+    border-radius: 10px;
+    padding-left: 12px;
+    color: #454545;
+    text-align: left;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; /*Anima el ancho del input por 0,4 segundos apurando el inicio y el cierre de la animación*/
+}
+input[type=text].inputText1:focus{
+    width: 98%;
+    outline: none;  
+}
+/*/////// Aplica estilos básicos al input y la animación del input ///////////////*/
+input[type=text].inputText2{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom:2px solid #CCC;
+    border-radius: 0px;
+    padding-left: 12px;
+    color: #454545;
+    text-align: left;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; /*Anima el ancho del input por 0,4 segundos apurando el inicio y el cierre de la animación*/
+}
+/*Aplica animación del input al hacer focus y quita el borde de seleccion de google*/
+input[type=text].inputText2:focus{
+    width: 98%;
+    outline: none;  
+}
+
+/*/////// Aplica estilos básicos al input y la animación del input ///////////////*/
+input[type=text].inputText2b{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border:1px solid #CCC;
+    border-radius: 0px;
+    padding-left: 12px;
+    color: #454545;
+    text-align: left;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; /*Anima el ancho del input por 0,4 segundos apurando el inicio y el cierre de la animación*/
+}
+/*Aplica animación del input al hacer focus y quita el borde de seleccion de google*/
+input[type=text].inputText2b:focus{
+    width: 98%;
+    outline: none;  
+}
+/*//////////*/
+.campos{
+    border: 1px solid #f7f7f7;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.campos .agrupaInputs{
+    margin: 10px;
+    width: auto;
+    text-align: left;
+}
+
+/*//////////////////////////////////////*/
+input[type=text].inputText3, input[type=text].inputText4, input[type=text].inputText5, input[type=text].inputText6{
+    display: block;
+    width: 95%;
+    height: 40px;
+    border-bottom: 1px solid #CCC;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: -1px;
+    padding-left: 10px;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 400;
+}
+input[type=text].inputText3::placeholder, input[type=text].inputText4::placeholder, input[type=text].inputText5::placeholder, input[type=text].inputText6::placeholder{
+    color: lightsteelblue;
+}
+input[type=text].inputText3:focus, input[type=text].inputText4:focus, input[type=text].inputText5:focus, input[type=text].inputText6:focus{
+    outline: none;
+}
+.inputText3 ~ .border1 {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 0;
+    height: 2px;
+}
+
+.inputText4 ~ .border2{
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 0;
+    height: 2px;
+}
+.inputText5 ~ .border3{
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 0;
+    height: 2px;
+}
+.inputText6 ~ .border4{
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 0;
+    height: 2px;
+}
+
+
+
+input[type=text].inputText3:focus ~ .border1{
+    width: 230px;
+    transition: all 0.5s ease;
+}
+
+input[type=text].inputText4:focus ~ .border2{
+    width: 230px;
+    transition: all 0.6s ease;
+}
+
+input[type=text].inputText5:focus ~ .border3{
+    width: 230px;
+    transition: all 0.7s ease;
+}
+
+input[type=text].inputText6:focus ~ .border4 {/*/////// Aplica animación del borde del input ///////////////*/
+    width: 230px;
+    transition: all 0.8s ease;
+}
+
+.border1, .border2, .border3, .border4 {/*/////// Aplica estilos de color al borde ///////////////*/
+    background-color: red;
+    min-width: 0px;
+    width: 0px;
+    /* position: relative; */
+    /* left: -100px; */
+}
+
+/*//////////////////////////////////////*/
+
+
+input[type=text].calendar{
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    background-image: url(https://www.easy.cl/minisitios/iconos-checkout/calendario-1.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    float: left;
+    margin-top: 10px;
+}
+input[type=text].calendar:focus{
+    outline: none;
+}
+
+/*/////////////////////////////////////*/
+
+input[type=password].inputPass{
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    float: left;
+    margin-top: 10px;
+}
+input[type=password].inputPass:focus{
+    outline: none;
+}
+/*//////////////////////////////////////*/
+div.agrupa{
+    /* width: 100%; */
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    text-align: left;
+    /* border: coral solid 1px; */
+    float: left;
+}
+
+.agrupa label{
+    color: #454545;
+    font-size: 13px;
+    margin: 0 0 5px 10px;
+}
+
+
+div.iconoCalendar{
+    background-image: url(https://www.easy.cl/minisitios/iconos-checkout/calendario-1.svg);
+    background-position: center center;
+    background-color: #dadada; 
+    color: black;
+    /* background-size: 10px; */
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-right: 1px solid #CCC;
+    border-radius: 8px 0 0 8px;
+    align-items: center;
+    /* display: inline-block; */
+    float: left;
+}
+
+input[type=text].calendar2{
+    border: 0px solid #CCC;
+    border-radius: 0 10px 10px 0;
+    width: 75%;
+    max-width: 270px;
+    height: 38px;
+    /* display: inline-block; */
+    float: left;
+    padding-left: 10px;
+}
+input[type=text].calendar2:focus{
+    outline: none;
+}
+.campo{
+    border: 1px solid #CCC;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    height: auto;
+}
+/*//////////////////////// CHECKBOX ////////////////////////////////*/
+input.check[type="checkbox"]:checked {
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    background: url(https://www.easy.cl/minisitios/iconos-checkout/check-on.svg) !important;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    color: #FFFFFF;
+    border: 0px;
+    outline: 0px;
+    -webkit-outline: none;
+    -moz-outline: none;
+    /* float: left; */
+}
+input.check[type="checkbox"] {
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    background: url(https://www.easy.cl/minisitios/iconos-checkout/check-off.svg) !important;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    color: #FFFFFF;
+    border: 0px;
+    outline: 0px;
+    -webkit-outline: none;
+    -moz-outline: none;
+    /* float: left; */
+}
+/*//////////////////////*/
+.select{
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    background: url(../iconos/caret-square-down-regular.svg);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+    color: #000;
+}
+.select:focus{
+    outline: none;
+}
+.select option{
+    background-color: #f7f7f7;
+}
+.select option:focus{
+    background-color: #30842e;
+}
+/*/////////////////////////////////////////////*/
+
+button.btn {
+    border: 0px solid red !important;
+    border-radius: 30px !important;
+    height: 40px;
+    width: 200px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+button.btn1 {
+    border: 2px solid #336699 !important;
+    background-color: #FFFFFF;
+    border-radius: 30px !important;
+    height: 40px;
+    width: 200px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+input.btn{
+    border: 0px solid red !important;
+    border-radius: 30px !important;
+    height: 40px;
+    width: 200px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+input.btn1{
+    border: 2px solid #336699 !important;
+    background-color: #FFFFFF;
+    border-radius: 30px !important;
+    height: 40px;
+    width: 200px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+a.btn{
+    border: 0px solid red !important;
+    border-radius: 30px !important;
+    height: 40px;
+    width: 200px;
+    padding: 8px 80px;
+    background-color: #ccc;
+    text-decoration: underline;
+    color: black;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+a.btn1{
+    border: 2px solid #336699 !important;
+    background-color: #FFFFFF;
+    border-radius: 30px !important;
+    height: 40px;
+    width: 200px;
+    padding: 8px 80px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+button.btn:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    color: black;
+}
+button.btn1:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #336699;
+    border: none;
+    color: #FFFFFF;
+}
+input.btn:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+}
+input.btn1:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #336699;
+    border: none;
+    color: #FFFFFF;
+}
+a.btn:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+}
+a.btn1:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #336699;
+    border: none;
+    color: #FFFFFF;
+}
+
+
+
+/*Radio Buttons*/
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    /* border: 2px solid green; */
+    border-radius: 50%;
+    background:#FFFFFF url(https://www.easy.cl/minisitios/iconos-checkout/radio-button-off.svg) center center no-repeat;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label span {
+    background: #FFFFFF url(https://www.easy.cl/minisitios/iconos-checkout/radio-button-on.svg) center center no-repeat;
+    width:22px;
+    height:22px;
+}
+/*/////////////////////////////////////////////// Barra de seguimiento standard /////////////////////////*/
+section.barras{
+    width: auto;
+    min-width: 90%;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    padding: 20px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+
+/* div.progressBarMobile {
+    border: 1px solid violet;
+    height: 60px;
+    width: 60%;
+    margin: 0px 20% !important;
+    position: absolute;
+    top: 186px;
+    float: left;
+    display: block;
+} */
+/*////////////////////*/
+/* #checkout_crumb{
+    border: 1px solid red;
+} */
+/* BARRA DE PROGRESO MOBILE */
+div.progressBarMobile{
+/* background: red; */
+    height: 120px;
+    width: 100%;
+    font-family: "Roboto";
+}
+div.progressBarMobile .progressBar{
+    counter-reset: step;
+    padding: 0px;
+}
+div.progressBarMobile .progressBar li{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    /* border: 1px solid red; */
+}
+div.progressBarMobile .progressBar li:before{
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    height: 20px;
+    border:1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0px auto 10px auto;
+    border-radius: 50%;
+    background-color: #dfdddd;
+    text-indent: -9000px;
+    vertical-align: middle;
+}
+/*barra*/
+div.progressBarMobile .progressBar li:after{ 
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: #ddd;
+    top:7px;
+    left: -50%;
+    z-index: -1;
+}
+div.progressBarMobile .progressBar li:first-child::after{
+    content:none;
+
+}
+div.progressBarMobile .progressBar li.active {
+    color: #454545;
+    font-weight: 300;
+}
+
+div.progressBarMobile .progressBar li.active1{
+    color: #30842e; 
+    font-weight: 700;
+}
+
+
+div.progressBarMobile .progressBar li.active::before{
+    border-color: #30842e; 
+    background-color: #30842e;
+}
+div.progressBarMobile .progressBar li.active1::before{
+    border-color: #30842e; 
+    background-color: #30842e;
+    width: 38px;
+    height: 38px;
+    margin: -10px auto 10px auto ;
+    background-image: url(https://www.easy.cl/minisitios/iconografia/bolsa-blanca.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center 5px;
+    /*colocar bg de bolsa*/
+}
+div.progressBarMobile .progressBar li.active > li:after, div.progressBarMobile .progressBar li.active1 > li:after{
+    background-color: #30842e;
+
+}
+div.progressBarMobile .progressBar li.active::after, div.progressBarMobile .progressBar li.active1::after {
+    background-color: #30842e;
+}
+/* fina barra progreso mobile*/
+
+
+
+
+
+div.progressBarMobileVertical{
+    height: auto;
+    width: 100px;
+}
+div.progressBarMobileVertical .progressBarV{
+    counter-reset: step;
+    padding: 0px;
+}
+div.progressBarMobileVertical div.progressBarV li{
+    list-style-type: none;
+    /* float: left; */
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: "Roboto";
+    /* border: 1px solid red; */
+}
+div.progressBarMobileVertical .progressBarV li:before{
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    height: 20px;
+    border:3px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0px auto 10px auto;
+    border-radius: 50%;
+    background-color: #dfdddd;
+    text-indent: -9000px;
+}
+div.progressBarMobileVertical .progressBarV li:after{ 
+    content: '';
+    position: relative;
+    width: 3px;
+    height: 200px;
+    background-color: #dddddd;
+    top: 0px;/*-50% */
+    left: 50%; /*10px */
+    z-index: -1;
+}
+div.progressBarMobileVertical .progressBarV li:first-child::after{
+    content:none;
+}
+div.progressBarMobileVertical .progressBarV li.active{
+    color: #454545;
+}
+div.progressBarMobileVertical .progressBarV li.active::before{
+    border-color:green; 
+    background-color: green;
+}
+div.progressBarMobileVertical .progressBar li.active1::before{
+    border-color: #30842e; 
+    background-color: #30842e;
+    width: 38px;
+    height: 38px;
+    margin: -10px auto 10px auto ;
+    background-image: url(https://www.easy.cl/minisitios/iconografia/bolsa-blanca.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center 5px;
+    /*colocar bg de bolsa*/
+}
+
+div.progressBarMobileVertical .progressBarV li.active > li:after{
+    background-color: green;
+}
+div.progressBarMobileVertical .progressBarV li.active::after {
+    background-color: green;
+}
+
+.contenedorFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KIT</title>
+    <link id="swap" rel="stylesheet" href="css/default.css" type="text/css">
+    <script type="application/javascript" src="js/javascript.js"></script>   
+   <style>
+    button{
+        border-radius: 30px;
+        width: 100px;
+        height: 40px;
+        border: 0px solid #ffffff;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        background-color: #ffffff;
+    }
+    button:focus{
+        outline: none;
+    }
+    button:hover{
+        /* background: #CCC; */
+        background-color: #4CAF50; /* Green */
+        color: white;
+    }
+    </style>
+
+    
+</head>
+<body>
+    <div id="container">
+        <h1>KIT UX/UI</h1>
+        <p>Incluye estilos y acciones con HTML, CSS y JS.</p>
+        <div class="selectores">
+
+
+                <button onClick="swapStylesheet('css/default.css')">Light</button>
+                <button onClick="swapStylesheet('css/dark.css')">Dark</button>
+                <button onClick="swapStylesheet('css/celeste.css')">Light Blue</button>
+
+
+
+
+            <!--<select id="selectCss">
+                <option value="onClick='swapStylesheet('default.css')'">Css1 Roboto</option>
+                <option value="onClick='swapStylesheet('dark.css')'">Css2 Open Sans</option>
+                <option value="">Css3 Arial</option>
+                <option value="">Sin Css</option>
+            </select>-->
+            
+        </div><!-- fin .selectores-->
+        <!--<section class="titulosH">
+            <h1>H1</h1>
+            <h2>H2</h2>
+            <h3>H3</h3>
+            <h4>H4</h4>
+            <h5>H5</h5>
+            <h6>H6</h6>
+        </section>-->
+        <section class="inputs">
+            <h2>Expandex Input Effects</h2>
+            <div class="agrupaInputs">
+                <label for="texto1" class="tit">Nombre:</label>
+                <input type="text" id="texto1" class="inputText1" placeholder="Inserte Nombre">
+                <span></span>
+            </div>
+            <div class="agrupaInputs">
+                <label for="texto2">Nombre:</label>
+                <input type="text" id="texto2" class="inputText2" placeholder="Inserte Nombre">
+                <span class="underline"></span>
+            </div>
+            <div class="agrupaInputs">
+                <label for="texto2b">Nombre:</label>
+                <input type="text" id="texto2b" class="inputText2b" placeholder="Inserte Nombre">
+                <span class="underline"></span>
+            </div>
+            <h2>Border Bottom Effects</h2>
+            <div class="campos">
+                
+                <div class="agrupaInputs">
+                    <label for="texto3">Nombre:</label>
+                    <input type="text" id="texto3" class="inputText3" placeholder="Inserte Nombre">
+                    <span class="border1"></span>
+                </div>
+                <div class="agrupaInputs">
+                    <label for="texto4">Nombre:</label>
+                    <input type="text" id="texto4" class="inputText4" placeholder="Inserte Nombre">
+                    <span class="border2"></span>
+                </div>
+                <div class="agrupaInputs">
+                    <label for="texto5">Nombre:</label>
+                    <input type="text" id="texto5" class="inputText5" placeholder="Inserte Nombre">
+                    <span class="border3"></span>
+                </div>
+                <div class="agrupaInputs">
+                    <label for="texto6">Nombre:</label>
+                    <input type="text" id="texto6" class="inputText6" placeholder="Inserte Nombre">
+                    <span class="border4"></span>
+                </div>
+
+            </div>
+
+
+            <div class="agrupaInputs">
+                <label for="calendar">Calendario</label>
+                <input type="text" id="calendar" class="calendar" placeholder="01/01/2020">
+                <span></span>
+            </div>
+            <!-- Select-->
+            <div class="agrupaInputs">
+                <label for="select">Select</label>
+                <select id="select" class="select">
+                    <option>uno</option>
+                    <option>dos</option>
+                    <option>tres</option>
+                </select>
+                
+                <span></span>
+            </div>
+            <!--Buttons-->
+            <div class="agrupaInputs">
+                <button class="btn">Enviar</button> &nbsp;&nbsp; <input class="btn" type="submit" value="Enviar"> &nbsp;&nbsp; <a href="#" class="btn">Enviar</a><br><br>
+                <button class="btn1">Enviar</button> &nbsp;&nbsp; <input class="btn1" type="submit" value="Enviar"> &nbsp;&nbsp; <a href="#" class="btn1">Enviar</a>
+            </div>
+            <!-- calendar  -->
+            <div class="agrupa">
+                <label>Calendario</label>
+                <div class="campo">
+                    <div>
+                        <div class="iconoCalendar"></div>
+                    </div>
+                    <input type="text" class="calendar2">
+                </div>
+            </div>
+            <!-- pass -->
+            <div class="agrupaInputs">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" class="inputPass" placeholder="******">
+                <span></span>
+            </div>
+            <h3>Range Input</h3>
+            <div class="agrupaInputs">
+                <label for="Range">Example Range input</label>
+                <input type="range" class="rango" id="Range">   
+            </div>
+            <!-- checkbox-->
+            <h3>Checkbox</h3>
+            <div class="agrupaInputs">
+                <input type="checkbox" class="check"> <input type="checkbox" class="check" checked>
+            </div>
+            <!-- radiobutton-->
+            <h3>Radio Buttons</h3>
+            <div class="agrupaInputs">
+                <input type="radio" id="cenco1" name="tarjeta" checked>
+                    <label for="cenco1"><span></span> Verdadero</label>
+                
+                <input type="radio" id="cenco2" name="tarjeta">
+                    <label for="cenco2"><span></span> Falso</label>
+            </div>
+
+
+
+            <div>
+                <!-- Paso 1 -->
+            <div id="checkout_crumb">	
+                <div class="progressBarMobile">
+                    <ul class="progressBar">
+                        <li class="active1">Compra <br>Confirmada</li>
+                        <li>Preparando tu <br>compra</li>
+                        <li>Compra lista <br>para retiro</li>
+                        <li>Compra <br> entregada</li>
+                    </ul>
+                </div>
+        
+                <!-- Paso 2 -->
+                <div class="progressBarMobile">
+                    <ul class="progressBar">
+                        <li class="active">Compra <br>Confirmada</li>
+                        <li class="active1">Preparando tu <br>compra</li>
+                        <li>Compra lista <br>para retiro</li>
+                        <li>Compra <br> entregada</li>
+                    </ul>
+                </div> 
+       
+            <!-- Paso 3 -->
+             <div class="progressBarMobile">
+                        <ul class="progressBar">
+                            <li class="active">Compra <br>Confirmada</li>
+                            <li class="active">Preparando tu <br>compra</li>
+                            <li class="active1">Compra lista <br>para retiro</li>
+                            <li>Compra <br> entregada</li>
+                        </ul>
+            </div> 
+            <!---->
+            <!-- Paso 4 -->
+            <div class="progressBarMobile">
+                <ul class="progressBar">
+                    <li class="active">Compra <br>Confirmada</li>
+                    <li class="active">Preparando tu <br>compra</li>
+                    <li class="active">Compra lista <br>para retiro</li>
+                    <li class="active1">Compra <br> entregada</li>
+                </ul>
+            </div>
+            <!---->
+
+            <!-- <div class="progressBarMobileVertical">
+                <ul class="progressBarV">
+                    <li class="active">1</li>
+                    <li class="active1">2</li>
+                    <li>3</li>
+                </ul>
+            </div> -->
+
+        </div>
+            </div>
+            <div class="divisor">
+                <h3>Flex Box</h3>
+                <div class="contenedorFlex">
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </section>
+
+        
+
+
+
+
+    </div><!-- fin #container-->
+</body>
+</html>

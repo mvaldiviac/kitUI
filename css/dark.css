@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #666;
+    font-family: 'Open Sans';
+    color: white;
+}
+#container{
+    width: 90%;
+    margin: 0px auto;
+    /* border: 1px solid greenyellow; */
+}
+h1, h2, h3, h4, h5, h6{
+    margin: auto;
+}
+#container h1{
+    text-align: center;
+}
+#container p{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+.selectores{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-bottom: 30px;
+}
+.selectores select{
+    width: 200px;
+    height: 40px;
+    border:1px solid #CCC;
+    border-radius: 10px;
+    padding-left: 12px;
+    color: #454545;
+}
+.titulosH h1{
+    text-align: left !important;
+}
+section.inputs{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.agrupaInputs{
+    float: left;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    /* border: 1px solid blue; */
+}
+div.agrupaInputs label{
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    
+}
+label.tit{
+    margin-bottom: 8px;
+}
+/*/////// Aplica estilos básicos al input y la animación del input ///////////////*/
+input[type=text].inputText1{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border:1px solid #CCC;
+    border-radius: 10px;
+    padding-left: 12px;
+    color: #454545;
+    text-align: left;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; /*Anima el ancho del input por 0,4 segundos apurando el inicio y el cierre de la animación*/
+}
+input[type=text].inputText1:focus{
+    width: 98%;
+    outline: none;  
+}
+/*/////// Aplica estilos básicos al input y la animación del input ///////////////*/
+input[type=text].inputText2{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom:2px solid #CCC;
+    border-radius: 0px;
+    padding-left: 12px;
+    color: #454545;
+    text-align: left;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; /*Anima el ancho del input por 0,4 segundos apurando el inicio y el cierre de la animación*/
+}
+/*Aplica animación del input al hacer focus y quita el borde de seleccion de google*/
+input[type=text].inputText2:focus{
+    width: 98%;
+    outline: none;  
+}
+/*//////////*/
+.campos{
+    border: 1px solid #f7f7f7;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.campos .agrupaInputs{
+    margin: 10px;
+    width: auto;
+    text-align: left;
+}
+
+/*//////////////////////////////////////*/
+input[type=text].inputText3, input[type=text].inputText4, input[type=text].inputText5, input[type=text].inputText6{
+    display: block;
+    width: 95%;
+    height: 40px;
+    border-bottom: 1px solid #CCC;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: -1px;
+    padding-left: 10px;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 400;
+}
+input[type=text].inputText3::placeholder, input[type=text].inputText4::placeholder, input[type=text].inputText5::placeholder, input[type=text].inputText6::placeholder{
+    color: lightsteelblue;
+}
+input[type=text].inputText3:focus, input[type=text].inputText4:focus, input[type=text].inputText5:focus, input[type=text].inputText6:focus{
+    outline: none;
+}
+.inputText3 ~ .border1 {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 0;
+    height: 2px;
+}
+
+.inputText4 ~ .border2{
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 0;
+    height: 2px;
+}
+.inputText5 ~ .border3{
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 0;
+    height: 2px;
+}
+.inputText6 ~ .border4{
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    width: 0;
+    height: 2px;
+}
+
+
+
+input[type=text].inputText3:focus ~ .border1{
+    width: 230px;
+    transition: all 0.5s ease;
+}
+
+input[type=text].inputText4:focus ~ .border2{
+    width: 230px;
+    transition: all 0.6s ease;
+}
+
+input[type=text].inputText5:focus ~ .border3{
+    width: 230px;
+    transition: all 0.7s ease;
+}
+
+input[type=text].inputText6:focus ~ .border4 {/*/////// Aplica animación del borde del input ///////////////*/
+    width: 230px;
+    transition: all 0.8s ease;
+}
+
+
+
+
+
+
+.border1, .border2, .border3, .border4 {/*/////// Aplica estilos de color al borde ///////////////*/
+    background-color: red;
+    min-width: 0px;
+    width: 0px;
+    /* position: relative; */
+    /* left: -100px; */
+}
+
+/*//////////////////////////////////////*/
