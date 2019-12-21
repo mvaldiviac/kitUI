@@ -9,6 +9,7 @@ body{
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
+    background-size: 100%;
     
 }
 
@@ -52,7 +53,7 @@ section.titulosH{
     margin-bottom: 20px;
 }
 .titulosH h1{
-    text-align: left !important;
+    text-align: center !important;
 }
 section.inputs{
     width: auto;
@@ -67,13 +68,14 @@ section.inputs{
     z-index: 1;
     opacity: 0.95;
     /* border: 1px solid red; */
+    top: 150px;
 }
 .agrupaInputs{
     /* float: left; */
     display: inline-block;
     width: 100%;
     height: auto;
-    text-align: left;
+    text-align: center;
     margin: 20px auto;
     /* border: 1px solid blue; */
 }
@@ -95,7 +97,7 @@ input[type=text].inputText1{
     display: block;
     width: 200px;
     height: 40px;
-    border:1px solid #CCC;
+    border: 2px solid #999;
     border-radius: 10px;
     padding-left: 12px;
     color: #454545;
@@ -116,7 +118,7 @@ input[type=text].inputText2{
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom:2px solid #CCC;
+    border-bottom:2px solid #999;
     border-radius: 0px;
     padding-left: 12px;
     color: #454545;
@@ -136,7 +138,7 @@ input[type=text].inputText2b{
     display: block;
     width: 200px;
     height: 40px;
-    border:1px solid #CCC;
+    border:1px solid #666;
     border-radius: 0px;
     padding-left: 12px;
     color: #454545;
@@ -170,7 +172,7 @@ input[type=text].inputText3, input[type=text].inputText4, input[type=text].input
     display: block;
     width: 95%;
     height: 40px;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid #666;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -247,19 +249,25 @@ input[type=text].inputText6:focus ~ .border4 {/*/////// Aplica animación del bo
 }
 
 /*//////////////////////////////////////*/
-
+.calendarito{
+    /* border: 1px solid red; */
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+    /* float: left; */
+}
 
 input[type=text].calendar{
     border: 1px solid #CCC;
     border-radius: 10px;
-    width: 100%;
-    max-width: 200px;
+    width: 95%;
+    /* max-width: 200px; */
     height: 40px;
     padding-left: 10px;
     background-image: url(https://www.easy.cl/minisitios/iconos-checkout/calendario-1.svg);
     background-repeat: no-repeat;
     background-position: 95% center;
-    float: left;
+    /* float: left; */
     margin-top: 10px;
 }
 input[type=text].calendar:focus{
@@ -275,7 +283,7 @@ input[type=password].inputPass{
     max-width: 200px;
     height: 40px;
     padding-left: 10px;
-    font-size: 16px;
+    /* font-size: 16px; */
     float: left;
     margin-top: 10px;
 }
@@ -285,15 +293,15 @@ input[type=password].inputPass:focus{
 /*//////////////////////////////////////*/
 div.agrupa{
     /* width: 100%; */
-    max-width: 300px;
+    /* max-width: 300px; */
     height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    text-align: left;
+    text-align: center;
     /* border: coral solid 1px; */
-    float: left;
+    /* float: left; */
 }
 
 .agrupa label{
