@@ -1,9 +1,25 @@
+/*///////////////////////////////////////////////////////////////////
+//  Cascading Style Sheets 3                                       //
+//  AUTOR: MIGUEL VALDIVIA C.                                      //
+//  DICIEMBRE 2019                                                 //
+///////////////////////////////////////////////////////////////////*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+:root{
+    /*------ Background -------*/
+    --backgroundColor1 : #FFFFFF;
+    --backgroundColor2 : red;
+    --backgroundColor3 : #336699;
+    --backgorundColor4 : #30842e;
+    /*------ Border -------*/
+    --borderColor4: #30842e;
+}
 
 body{
     margin: 0px;
     padding: 0px;
-    background: #FFFFFF;
+    background: var(--backgroundColor1);
     font-family: 'Roboto';
     background-image: url(../images/bg7.jpg);
     background-repeat: no-repeat;
@@ -63,7 +79,8 @@ section.inputs{
     display: block;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.15);
     margin-bottom: 30px;
-    background-color: #ffffff;
+    background-color: var(--backgroundColor1);
+    /*background-color: #ffffff;*/
     position: relative;
     z-index: 1;
     opacity: 0.95;
@@ -241,7 +258,7 @@ input[type=text].inputText6:focus ~ .border4 {/*/////// Aplica animación del bo
 }
 
 .border1, .border2, .border3, .border4 {/*/////// Aplica estilos de color al borde ///////////////*/
-    background-color: red;
+    background-color: var(--backgroundColor2);
     min-width: 0px;
     width: 0px;
     /* position: relative; */
@@ -409,7 +426,8 @@ input.check[type="checkbox"] {
     background-color: #f7f7f7;
 }
 .select option:focus{
-    background-color: #30842e;
+
+    background-color: var(--backgorundColor4) ;
 }
 /*/////////////////////////////////////////////*/
 
@@ -423,7 +441,7 @@ button.btn {
 }
 button.btn1 {
     border: 2px solid #336699 !important;
-    background-color: #FFFFFF;
+    background-color:var(--backgroundColor1);
     border-radius: 30px !important;
     height: 40px;
     width: 200px;
@@ -440,7 +458,7 @@ input.btn{
 }
 input.btn1{
     border: 2px solid #336699 !important;
-    background-color: #FFFFFF;
+    background-color: var(--backgroundColor1);
     border-radius: 30px !important;
     height: 40px;
     width: 200px;
@@ -461,7 +479,7 @@ a.btn{
 }
 a.btn1{
     border: 2px solid #336699 !important;
-    background-color: #FFFFFF;
+    background-color: var(--backgroundColor1);
     border-radius: 30px !important;
     height: 40px;
     width: 200px;
@@ -471,12 +489,12 @@ a.btn1{
 }
 button.btn:hover {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
+    background-color: var(--backgroundColor1) ;
     color: black;
 }
 button.btn1:hover {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-    background-color: #336699;
+    background-color: var(--backgroundColor3);
     border: none;
     color: #FFFFFF;
 }
@@ -486,17 +504,17 @@ input.btn:hover {
 }
 input.btn1:hover {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-    background-color: #336699;
+    background-color:  var(--backgroundColor3);
     border: none;
     color: #FFFFFF;
 }
 a.btn:hover {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
+    background-color: var(--backgroundColor1);
 }
 a.btn1:hover {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-    background-color: #336699;
+    background-color: var(--backgroundColor3);
     border: none;
     color: #FFFFFF;
 }
@@ -614,12 +632,12 @@ div.progressBarMobile .progressBar li.active1{
 
 
 div.progressBarMobile .progressBar li.active::before{
-    border-color: #30842e; 
-    background-color: #30842e;
+    border-color: var(--borderColor4) ; 
+    background-color: var(--backgorundColor4);
 }
 div.progressBarMobile .progressBar li.active1::before{
-    border-color: #30842e; 
-    background-color: #30842e;
+    border-color: var(--borderColor4) ; 
+    background-color: var(--backgorundColor4);
     width: 38px;
     height: 38px;
     margin: -10px auto 10px auto ;
@@ -630,11 +648,11 @@ div.progressBarMobile .progressBar li.active1::before{
     /*colocar bg de bolsa*/
 }
 div.progressBarMobile .progressBar li.active > li:after, div.progressBarMobile .progressBar li.active1 > li:after{
-    background-color: #30842e;
+    background-color: var(--backgorundColor4);
 
 }
 div.progressBarMobile .progressBar li.active::after, div.progressBarMobile .progressBar li.active1::after {
-    background-color: #30842e;
+    background-color: var(--backgorundColor4);
 }
 /* fina barra progreso mobile*/
 
@@ -689,12 +707,12 @@ div.progressBarMobileVertical .progressBarV li.active{
     color: #454545;
 }
 div.progressBarMobileVertical .progressBarV li.active::before{
-    border-color:green; 
-    background-color: green;
+    border-color: var(--borderColor4); 
+    background-color: var(--backgorundColor4);
 }
 div.progressBarMobileVertical .progressBar li.active1::before{
-    border-color: #30842e; 
-    background-color: #30842e;
+    border-color: var(--borderColor4); 
+    background-color: var(--backgorundColor4);
     width: 38px;
     height: 38px;
     margin: -10px auto 10px auto ;
@@ -706,10 +724,10 @@ div.progressBarMobileVertical .progressBar li.active1::before{
 }
 
 div.progressBarMobileVertical .progressBarV li.active > li:after{
-    background-color: green;
+    background-color: var(--backgorundColor4);
 }
 div.progressBarMobileVertical .progressBarV li.active::after {
-    background-color: green;
+    background-color: var(--backgorundColor4);
 }
 
 .contenedorFlex{
