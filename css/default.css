@@ -736,3 +736,27 @@ div.progressBarMobileVertical .progressBarV li.active::after {
     justify-content: flex-start;
     align-content: flex-start;
 }
+
+/* Despliega DIv*/
+#boton{
+    width: 300px;
+    border: var(--borderColor4) 2px solid;
+}
+#caja{
+    /* display: none; */
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    background-color: var(--backgroundColor3);
+    width: 90%;
+	margin: 10px auto;
+	height: 0px;
+	/* box-shadow: 10px 10px 3px #D8D8D8; */
+    transition: height .4s;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    /* display: none; */
+}
+#caja p{
+    /* display: none; */
+}
